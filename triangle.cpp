@@ -1,14 +1,14 @@
 #include "triangle.h"
 #include "my_exception.h"
 
-my_namespace::Triangle::Triangle(int l1, int l2, int l3, int c1, int c2, int c3) :       //публичный конструктор для создания объектов обычного треугольника (вызывает протектед конструктор, но с именем треуг)
-	Triangle(l1, l2, l3, c1, c2, c3, "Треугольник") {
+my_namespace::Triangle::Triangle(int l1, int l2, int l3, int c1, int c2, int c3) :       //РїСѓР±Р»РёС‡РЅС‹Р№ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РѕР±СЉРµРєС‚РѕРІ РѕР±С‹С‡РЅРѕРіРѕ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР° (РІС‹Р·С‹РІР°РµС‚ РїСЂРѕС‚РµРєС‚РµРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ, РЅРѕ СЃ РёРјРµРЅРµРј С‚СЂРµСѓРі)
+	Triangle(l1, l2, l3, c1, c2, c3, "РўСЂРµСѓРіРѕР»СЊРЅРёРє") {
 }
 
 my_namespace::Triangle::Triangle(int l1, int l2, int l3, int c1, int c2, int c3, const std::string name) :
 	Figure(name,3) {
-	if (getSides() != 3) throw MyException("количество сторон не равно 3");
-	if ((c1 + c2 + c3) != 180) throw MyException("сумма углов не равна 180");
+	if (getSides() != 3) throw MyException("РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚РѕСЂРѕРЅ РЅРµ СЂР°РІРЅРѕ 3");
+	if ((c1 + c2 + c3) != 180) throw MyException("СЃСѓРјРјР° СѓРіР»РѕРІ РЅРµ СЂР°РІРЅР° 180");
 	len1 = l1; len2 = l2; len3 = l3;
 	cor1 = c1; cor2 = c2; cor3 = c3;
 }
