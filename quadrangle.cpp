@@ -1,12 +1,12 @@
 #include "quadrangle.h"
 #include "my_exception.h"
 my_namespace::Quadrangle::Quadrangle(int l1, int l2, int l3, int l4, int c1, int c2, int c3, int c4) :
-	Quadrangle(l1, l2, l3, l4, c1, c2, c3, c4, "Четырёхугольник") {}
+	Quadrangle(l1, l2, l3, l4, c1, c2, c3, c4, "Р§РµС‚С‹СЂС‘С…СѓРіРѕР»СЊРЅРёРє") {}
 
 my_namespace::Quadrangle::Quadrangle(int l1, int l2, int l3, int l4, int c1, int c2, int c3, int c4, const std::string name) :
 	Figure(name,4) {
-	if (getSides() != 4) throw MyException("количество сторон не равно 4");
-	if ((c1 + c2 + c3 + c4) != 360) throw MyException("сумма углов не равна 360");
+	if (getSides() != 4) throw MyException("РєРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚РѕСЂРѕРЅ РЅРµ СЂР°РІРЅРѕ 4");
+	if ((c1 + c2 + c3 + c4) != 360) throw MyException("СЃСѓРјРјР° СѓРіР»РѕРІ РЅРµ СЂР°РІРЅР° 360");
 	len1 = l1; len2 = l2; len3 = l3; len4 = l4;
 	cor1 = c1; cor2 = c2; cor3 = c3; cor4 = c4;
 }
