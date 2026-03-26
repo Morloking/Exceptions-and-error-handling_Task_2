@@ -2,7 +2,7 @@
 #include "my_exception.h"
 
 my_namespace::Square::Square(int l1, int l2, int l3, int l4, int c1, int c2, int c3, int c4) :
-	Quadrangle(l1, l2, l3, l4, c1, c2, c3, c4, "Квадрат") {
-	if (l1 != l2 || l2 != l3 || l3 != l4) throw MyException("не все стороны равны");
-	if (c1 != 90 || c2 != 90 || c3 != 90 || c4 != 90) throw MyException("не каждый угол равен 90");
+	Quadrangle(l1, l2, l3, l4, c1, c2, c3, c4, "РљРІР°РґСЂР°С‚") {
+	if (l1 != l2 || l2 != l3 || l3 != l4) throw MyException("РЅРµ РІСЃРµ СЃС‚РѕСЂРѕРЅС‹ СЂР°РІРЅС‹");
+	if (c1 != 90 || c2 != 90 || c3 != 90 || c4 != 90) throw MyException("РЅРµ РєР°Р¶РґС‹Р№ СѓРіРѕР» СЂР°РІРµРЅ 90");
 }
