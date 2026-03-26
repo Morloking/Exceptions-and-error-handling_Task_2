@@ -14,7 +14,7 @@ namespace my_namespace {
 	protected:
 		Figure(std::string name, int sides);
 	private:
-		std::string nameF{ "Ôèãóğà" };
+		std::string nameF{ "Ğ¤Ğ¸Ğ³ÑƒÑ€Ğ°" };
 		int amountSides{ 0 };
 	};
 }
